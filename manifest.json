@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "ToursonsGottaWork",
+    "version": "1.0",
+  
+    "description": "Add some tourson and love to your work time",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content-script/main.js"]
+      }
+    ],
+
+    "options_ui": {
+        "page": "options/options.html"
+    },
+
+    "permissions": ["storage"]
+  
+  }
