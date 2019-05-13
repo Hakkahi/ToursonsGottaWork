@@ -2,7 +2,7 @@
 
     "manifest_version": 2,
     "name": "ToursonsGottaWork",
-    "version": "1.0",
+    "version": "2.0",
 
     "description": "Add some tourson and love to your work time",
 
@@ -16,17 +16,17 @@
         "default_popup": "popup/popup.html"
     },
 
-    "content_scripts": [
-    {
+    "content_scripts": [{
         "matches": ["http://*/*", "https://*/*"],
         "js": ["content-script/main.js"]
-    }
-    ],
+    }],
+
+    "web_accessible_resources": ["content-script/ressources/customContent.html", "content-script/ressources/customContent.js", "content-script/ressources/customContent.css", "content-script/ressources/images/background.webp"],
 
     "options_ui": {
         "page": "options/options.html"
     },
 
     "permissions": ["storage"]
-  
-  }
+
+}

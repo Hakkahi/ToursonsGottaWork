@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-        <link rel="stylesheet" href="css/popup.css"/>
-    </head>
-    
-    <body>
 
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="css/popup.css" />
+</head>
 
-        <script src="js/popup.js"></script>
-    </body>
-</html> 
+<body>
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+    </div>
+
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
